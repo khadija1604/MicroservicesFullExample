@@ -1,0 +1,17 @@
+server:
+   port : 9004
+       
+spring:     
+  application:
+    name: DEPARTMENT-SERVICE
+  zipkin:
+   base-url: http://127.0.0.1:9411/ 
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+   hostname: localhost
+   
